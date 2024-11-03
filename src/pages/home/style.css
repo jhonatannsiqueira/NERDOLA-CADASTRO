@@ -6,8 +6,14 @@
 }
 
 h1 {
-  color: #fff;
-  font-size: 30px;
+  border-radius: 30px;
+  background-color: #262631;
+  height: auto;
+  border: none;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
 }
 
 form {
@@ -16,23 +22,20 @@ form {
   gap: 30px;
   padding: 30px;
   border-radius: 10px;
+  background: none;
   max-width: 50%;
   width: auto;
   margin-bottom: 20px;
-  background: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 20px;
 
   & button {
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #262631;
     height: 40px;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    font-size: 20px;
+    color: #FFF;
+    font-size: 14px;
   }
 
   & button:hover {
@@ -40,25 +43,25 @@ form {
   }
 
   & input {
-    border: 1px solid;
+    border: 1px solid #48456C;
     border-radius: 30px;
     height: 40px;
-    background-color: #696969;
+    background-color: #262631;
     color: #fff;
     font-size: 16px;
     padding-left: 10px;
     outline: none;
   }
+}
 
-  .card {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-    border-radius: 10px;
-  }
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262631;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
 
   & p {
     color: #fff;
@@ -67,5 +70,15 @@ form {
 
   & span {
     font-weight: normal;
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    opacity: 0.5;
   }
 }
