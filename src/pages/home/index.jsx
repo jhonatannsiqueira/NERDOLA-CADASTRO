@@ -33,6 +33,12 @@ function Home() {
     getUsers()
   }, [])
 
+  async function deleteUsers(id) {
+    await api.delete(`/usuarios/${id}`)
+
+    getUsers()
+  }
+
   return (
     <div className='container'>
       <form>
@@ -50,7 +56,7 @@ function Home() {
             <p>Idade: <span>{user.idade}</span></p>
             <p>E-mail: <span>{user.email}</span></p>
           </div>
-          <button>
+          <button onClick={() => deleteUsers(user.id)}>
             <img src={Trash} />
           </button>
         </div>
